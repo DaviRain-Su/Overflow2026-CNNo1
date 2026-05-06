@@ -1,6 +1,8 @@
 # Sui Overflow 2026 - CN No.1
 
-Sui Overflow 2026 中文区参赛项目统一提交仓库 / Central repository for Chinese region project submissions.
+Sui Overflow 2026 中文区项目登记仓库。用于统计中文区参赛项目、抽奖和发放周边。
+
+> **注意：本仓库仅用于中文区统计和社区活动（抽奖/周边），正式参赛请以 [Sui Overflow 官网](https://overflow.sui.io/) 提交为准。**
 
 ## Quick Links / 快速入口
 
@@ -47,12 +49,12 @@ submissions/
 bash scripts/list_participants.sh
 ```
 
-## Rules / 规则
+## Important / 重要说明
 
-- 每个 GitHub ID 只能创建一个目录
-- 项目必须基于 Sui 区块链
-- 目录名必须使用你的 GitHub 用户名
-- 详细规则见 [guide.md](guide.md)
+- 本仓库用于**中文区项目登记**，方便统计参赛情况和发放周边
+- **正式参赛**仍需在 [Sui Overflow 官网](https://overflow.sui.io/) 完成提交
+- 在本仓库登记后自动获得中文区**抽奖资格**
+- 每个 GitHub ID 只能创建一个目录，项目必须基于 Sui
 
 ---
 
