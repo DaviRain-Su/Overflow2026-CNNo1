@@ -25,7 +25,9 @@ submissions/
 ├── _template/           # <-- 复制这个目录
 │   └── README.md
 ├── your-github-id/      # <-- 粘贴并重命名
-│   └── README.md
+│   ├── README.md        # 第一个项目
+│   ├── project1.md      # 第二个项目（可选）
+│   └── project2.md      # 第三个项目（可选）
 ```
 
 ## Tracks / 赛道

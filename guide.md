@@ -96,7 +96,24 @@ cp -r submissions/_template submissions/<你的GitHub用户名>
 
 > 勾选后，请通过[周边收件表单](#)单独提交收件人、联系方式、收件地址和钱包地址，避免在公开 PR 中暴露隐私。
 
-### 4. 提交 PR
+### 4. 追加更多项目（可选）
+
+如果你有多个项目，可以在同一目录下创建 `project1.md`、`project2.md` 等文件：
+
+```bash
+cp submissions/_template/README.md submissions/<你的GitHub用户名>/project1.md
+# 编辑 project1.md 填写第二个项目信息
+```
+
+**文件命名规则：**
+- `README.md` — 第一个项目
+- `project1.md` — 第二个项目
+- `project2.md` — 第三个项目
+- ...以此类推（最多 `project9.md`）
+
+每个项目文件独立填写赛道、简介、链接等信息。
+
+### 6. 提交 PR
 
 ```bash
 git add submissions/<你的GitHub用户名>/
@@ -106,7 +123,7 @@ git push origin main
 
 然后回到 GitHub 页面，点击 **Create Pull Request**，提交到本仓库的 `main` 分支。
 
-### 5. 等待合并
+### 7. 等待合并
 
 PR 合并后你就自动进入抽奖名单了。
 

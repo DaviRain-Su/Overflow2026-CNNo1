@@ -33,16 +33,36 @@ for dir in "$SUBMISSIONS_DIR"/*/; do
   fi
   participants+=("$dirname")
 
-  # Try to extract track from README
+  # Try to extract track from project files
   readme="$dir/README.md"
-  if [ -f "$readme" ]; then
-    # Find the checked track (line with [x] or [X])
-    track=$(grep -i '\[x\]' "$readme" | sed 's/.*\[x\][[:space:]]*//' | xargs)
-    if [ -z "$track" ]; then
+  if [ -f "$readme" ] || ls "$dir"/project[1-9].md &>/dev/null; then
+    # Collect tracks from all project files
+    project_tracks=()
+    for file in "$dir"/README.md "$dir"/project[1-9].md; do
+      if [ -f "$file" ]; then
+        track=$(grep -i '\[x\]' "$file" | sed 's/.*\[x\][[:space:]]*//' | xargs)
+        if [ -n "$track" ]; then
+          project_tracks+=("$track")
+        fi
+      fi
+    done
+    if [ ${#project_tracks[@]} -gt 0 ]; then
+      track=$(IFS=','; echo "${project_tracks[*]}")
+    else
       track="(未选择 / Not selected)"
     fi
+
+    # Count projects
+    project_count=0
+    [ -f "$dir/README.md" ] && project_count=$((project_count + 1))
+    for file in "$dir"/project[1-9].md; do
+      [ -f "$file" ] && project_count=$((project_count + 1))
+    done
+    if [ $project_count -gt 1 ]; then
+      track="$track ($project_count projects)"
+    fi
   else
-    track="(无 README)"
+    track="(无项目文件)"
   fi
   tracks+=("$track")
 done

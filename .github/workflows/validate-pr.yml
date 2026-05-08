@@ -89,64 +89,85 @@ jobs:
             echo "OK: changes found under $EXPECTED_DIR"
           fi
 
-          # Check 3: Validate README.md content
+          # Check 3: Validate project files (README.md + project[0-9].md)
           echo ""
           echo "=== Check 3: Template validation ==="
-          README="submissions/$PR_AUTHOR/README.md"
+          AUTHOR_DIR="submissions/$PR_AUTHOR"
 
-          if [ -f "$README" ]; then
-            CONTENT=$(cat "$README")
-
-            # Check project name
-            if echo "$CONTENT" | grep -q '<Project Name>'; then
-              ERRORS="$ERRORS\n- Project name not filled (still contains <Project Name>)"
-              echo "FAIL: project name is placeholder"
-            else
-              echo "OK: project name filled"
+          # Find all project files: README.md, project1.md ~ project9.md
+          PROJECT_FILES=()
+          if [ -f "$AUTHOR_DIR/README.md" ]; then
+            PROJECT_FILES+=("$AUTHOR_DIR/README.md")
+          fi
+          for i in $(seq 1 9); do
+            PF="$AUTHOR_DIR/project${i}.md"
+            if [ -f "$PF" ]; then
+              PROJECT_FILES+=("$PF")
             fi
+          done
 
-            # Check track selection
-            if ! echo "$CONTENT" | grep -q '\[x\]'; then
-              ERRORS="$ERRORS"$'\n'"- No track selected (mark one with [x])"
-              echo "FAIL: no track selected"
-            else
-              # Check only one track selected
-              TRACK_COUNT=$(echo "$CONTENT" | grep -c '\[x\]' || true)
-              if [ "$TRACK_COUNT" -gt 1 ]; then
-                ERRORS="$ERRORS"$'\n'"- Multiple tracks selected, please select only one"
-                echo "FAIL: $TRACK_COUNT tracks selected"
-              else
-                echo "OK: exactly 1 track selected"
-              fi
-            fi
-
-            # Check description
-            DESC=$(echo "$CONTENT" | sed -n '/^## Description/,/^## /{ /^## /!p }' | grep -v '^<!--' | sed '/^$/d' | head -1)
-            if [ -z "$DESC" ]; then
-              ERRORS="$ERRORS"$'\n'"- Description is empty"
-              echo "FAIL: description empty"
-            else
-              echo "OK: description filled"
-            fi
-
-            # Check GitHub link
-            if echo "$CONTENT" | grep -q 'https://github.com/\.\.\.'; then
-              ERRORS="$ERRORS"$'\n'"- GitHub link not filled (still placeholder)"
-              echo "FAIL: github link is placeholder"
-            else
-              echo "OK: github link filled"
-            fi
-
-            # Check team member
-            if echo "$CONTENT" | grep -q '@your-github-id'; then
-              ERRORS="$ERRORS"$'\n'"- Team member not filled (still contains @your-github-id)"
-              echo "FAIL: team member is placeholder"
-            else
-              echo "OK: team member filled"
-            fi
+          if [ ${#PROJECT_FILES[@]} -eq 0 ]; then
+            ERRORS="$ERRORS"$'\n'"- No project files found (need README.md or project[1-9].md)"
+            echo "FAIL: no project files"
           else
-            ERRORS="$ERRORS"$'\n'"- README.md not found at $README"
-            echo "FAIL: $README does not exist"
+            echo "Found ${#PROJECT_FILES[@]} project file(s)"
+            validate_project() {
+              local FILE="$1"
+              local LABEL=$(basename "$FILE")
+              local CONTENT=$(cat "$FILE")
+
+              # Check project name
+              if echo "$CONTENT" | grep -q '<Project Name>'; then
+                ERRORS="$ERRORS"$'\n'"- [$LABEL] Project name not filled (still contains <Project Name>)"
+                echo "FAIL: [$LABEL] project name is placeholder"
+              else
+                echo "OK: [$LABEL] project name filled"
+              fi
+
+              # Check track selection
+              if ! echo "$CONTENT" | grep -q '\[x\]'; then
+                ERRORS="$ERRORS"$'\n'"- [$LABEL] No track selected (mark one with [x])"
+                echo "FAIL: [$LABEL] no track selected"
+              else
+                TRACK_COUNT=$(echo "$CONTENT" | grep -c '\[x\]' || true)
+                if [ "$TRACK_COUNT" -gt 1 ]; then
+                  ERRORS="$ERRORS"$'\n'"- [$LABEL] Multiple tracks selected, please select only one"
+                  echo "FAIL: [$LABEL] $TRACK_COUNT tracks selected"
+                else
+                  echo "OK: [$LABEL] exactly 1 track selected"
+                fi
+              fi
+
+              # Check description
+              DESC=$(echo "$CONTENT" | sed -n '/^## Description/,/^## /{ /^## /!p }' | grep -v '^<!--' | sed '/^$/d' | head -1)
+              if [ -z "$DESC" ]; then
+                ERRORS="$ERRORS"$'\n'"- [$LABEL] Description is empty"
+                echo "FAIL: [$LABEL] description empty"
+              else
+                echo "OK: [$LABEL] description filled"
+              fi
+
+              # Check GitHub link
+              if echo "$CONTENT" | grep -q 'https://github.com/\.\.\.'; then
+                ERRORS="$ERRORS"$'\n'"- [$LABEL] GitHub link not filled (still placeholder)"
+                echo "FAIL: [$LABEL] github link is placeholder"
+              else
+                echo "OK: [$LABEL] github link filled"
+              fi
+
+              # Check team member
+              if echo "$CONTENT" | grep -q '@your-github-id'; then
+                ERRORS="$ERRORS"$'\n'"- [$LABEL] Team member not filled (still contains @your-github-id)"
+                echo "FAIL: [$LABEL] team member is placeholder"
+              else
+                echo "OK: [$LABEL] team member filled"
+              fi
+            }
+
+            for PF in "${PROJECT_FILES[@]}"; do
+              echo "--- Validating $PF ---"
+              validate_project "$PF"
+            done
           fi
 
           # Save errors
