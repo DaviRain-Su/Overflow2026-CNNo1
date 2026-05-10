@@ -9,7 +9,7 @@
 
 ## Description / 项目简介
 
-LeafSheep — AI-managed liquidity for Cetus DLMM on Sui. 用户把 Cetus DLMM 头寸存入非托管金库并授权给 AI agent 管理，agent 在合适的价格 bin 上摆放流动性：每次价格穿过你流动性所在的 bin，你既收手续费、又完成一次"低买高卖"的交易；落在活跃区间外的资产则被路由到 Scallop 借贷生息，让闲置资产持续工作。LeafSheep 完全无许可，任何第三方 AI agent 都可被授权来管理用户流动性，agent 可以再平衡但永远无法提走资金，由智能合约强制保证。合约已在 Sui 主网以 immutable 方式发布，无升级权限。
+LeafSheep — AI-managed liquidity for Cetus DLMM on Sui. 用户把 Cetus DLMM 头寸存入非托管金库并授权给 AI agent 管理，agent 在合适的价格 bin 上摆放流动性：每次价格穿过你流动性所在的 bin，你既收手续费、又完成一次"低买高卖"的交易；落在活跃区间外的资产则被路由到 Scallop, Kai 借贷生息，让闲置资产持续工作。LeafSheep 完全无许可，任何第三方 AI agent 都可被授权来管理用户流动性，agent 可以再平衡但永远无法提走资金，由智能合约强制保证。合约已在 Sui 主网以 immutable 方式发布，无升级权限。
 
 ## Links / 链接
 
