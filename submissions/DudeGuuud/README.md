@@ -17,7 +17,7 @@ DeepPilot 是一个面向 DeepBook Predict 的 AI 辅助交易审查终端，把
 
 - DeepSurge: https://www.deepsurge.xyz/projects/3263ae3c-c489-4be5-826d-577013370512
 - GitHub: https://github.com/DudeGuuud/DeepPilot
-- Demo Video: in progress
+- Demo Video: https://youtu.be/LR1WuWqP7ug?si=5Parpy-c4wzFMqeI
 - Website: https://deep-pilot.vercel.app/landing
 
 ## Team / 团队成员
