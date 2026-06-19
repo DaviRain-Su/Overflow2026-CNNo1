@@ -15,13 +15,13 @@ Alive 是基于 Sui AI Agent 的娱乐与文化平台。创造交互式、Agent 
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/7262f493-24e6-48a1-a3ac-6de50c420286
-- GitHub: https://github.com/0xfig521/alive
+- GitHub: https://github.com/0xFig159/alive
 - Demo Video: https://drive.google.com/open?id=13QWg_2elWmMRpmopectuv1C6eLx8fEl-
 - Website: https://alive.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

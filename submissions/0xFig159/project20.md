@@ -15,13 +15,13 @@ DeepBook Predict Scenario Simulator 为 DeepBook 上的预测市场提供场景�
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/26469a71-afb7-4eae-a53e-2206dcf6f11b
-- GitHub: https://github.com/0xfig521/deepbook-predict-scenario-simulator
+- GitHub: https://github.com/0xFig159/deepbook-predict-scenario-simulator
 - Demo Video: https://drive.google.com/open?id=1xxIxFrzR9oay5mrJ7pzQYv8ymwqwU3tr
 - Website: https://deepbook-predict-scenario-simulator.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

@@ -15,13 +15,13 @@ Open Research Notebook 在 Walrus/Sui 上提供协作式研究笔记本。研究
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/5656c016-bb0d-4058-adea-741ccc5b8b53
-- GitHub: https://github.com/0xfig521/open-research-notebook-walrus
+- GitHub: https://github.com/0xFig159/open-research-notebook-walrus
 - Demo Video: https://drive.google.com/open?id=1cwT2wie4hEq8oZguf9M6nt2I1cgLjotg
 - Website: https://open-research-notebook-walrus.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

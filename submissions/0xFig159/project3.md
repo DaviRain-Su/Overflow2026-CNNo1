@@ -21,7 +21,7 @@ Sui Actions / PTB Links 实现可分享的可编程交易块，优化 Sui 的开
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

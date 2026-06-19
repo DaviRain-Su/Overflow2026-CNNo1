@@ -15,13 +15,13 @@ Kiosk Creator Toolkit 提供 Sui 上的 Kiosk 创建与管理工具。简化 NFT
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/54e46fd3-a2b0-4646-b6d8-be5e0e6eb891
-- GitHub: https://github.com/0xfig521/kiosk-creator-toolkit
+- GitHub: https://github.com/0xFig159/kiosk-creator-toolkit
 - Demo Video: https://drive.google.com/open?id=1iG0uEARKZggS6ky-EU7ObBorL3xj-dHR
 - Website: https://kiosk-creator-toolkit.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

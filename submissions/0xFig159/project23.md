@@ -15,13 +15,13 @@ DeepBook Market Explainer 为 Sui DeepBook 提供市场解读与分析。利用 
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/b0ce305f-9e83-4d7d-8fc3-423a5109b289
-- GitHub: https://github.com/0xfig521/deepbook-market-explainer
+- GitHub: https://github.com/0xFig159/deepbook-market-explainer
 - Demo Video: https://drive.google.com/open?id=1nHfd-aiBz-2orxmMpR4t7ICC6_pox9o6
 - Website: https://deepbook-market-explainer.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

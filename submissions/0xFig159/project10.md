@@ -15,13 +15,13 @@ ProofRoom 在 Walrus/Sui 上提供可验证的证明与证据管理。支持带�
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/501c633f-9b87-4683-b044-4eb7df63aff1
-- GitHub: https://github.com/0xfig521/proofroom
+- GitHub: https://github.com/0xFig159/proofroom
 - Demo Video: https://drive.google.com/open?id=1Dk-Kclk1s8RDNbDI-09Y_fRfsIaMp_C_
 - Website: https://proofroom.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

@@ -15,13 +15,13 @@ Predict Postmortem League 为预测市场提供事后分析与学习。分析过
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/61a9f09b-1ae2-4e37-9441-79d34a395062
-- GitHub: https://github.com/0xfig521/predict-postmortem-league
+- GitHub: https://github.com/0xFig159/predict-postmortem-league
 - Demo Video: https://drive.google.com/open?id=1bIjtI7Q-FyPQgfnvT--3EaYQX_Q30IZH
 - Website: https://predict-postmortem-league.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

@@ -15,13 +15,13 @@ Walrus StorageOps 为 Walrus on Sui 提供生产级存储运维管理。包括 B
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/a3a93576-1299-49a9-b059-2c7491b24272
-- GitHub: https://github.com/0xfig521/walrus-storageops
+- GitHub: https://github.com/0xFig159/walrus-storageops
 - Demo Video: https://drive.google.com/open?id=15LT_Rt_3C-OhLVFndOeyWFPqCN4xj5Uj
 - Website: https://walrus-storageops.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

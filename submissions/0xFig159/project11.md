@@ -15,13 +15,13 @@ Move Package Diff Viewer 提供 Sui Move 包版本的可视化对比。跟踪包
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/10ce35c3-f6ac-490f-9177-07fcf28a80cb
-- GitHub: https://github.com/0xfig521/move-package-diff-viewer
+- GitHub: https://github.com/0xFig159/move-package-diff-viewer
 - Demo Video: https://drive.google.com/open?id=1woEFwJ_dlgQGTxPImQAOZoXuW1Len3QO
 - Website: https://move-package-diff-viewer.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

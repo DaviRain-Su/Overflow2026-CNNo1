@@ -15,13 +15,13 @@ DeepBook Execution Quality Report 为 Sui DeepBook 提供执行质量分析与�
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/c67f0851-50ef-49a0-b0ad-a4773e7889a2
-- GitHub: https://github.com/0xfig521/deepbook-execution-quality-report
+- GitHub: https://github.com/0xFig159/deepbook-execution-quality-report
 - Demo Video: https://drive.google.com/open?id=1OlAjBxM28pVP8WZdNS0bAgUVGiLO4yDI
 - Website: https://deepbook-execution-quality-report.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

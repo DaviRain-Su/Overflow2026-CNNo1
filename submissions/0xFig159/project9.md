@@ -15,13 +15,13 @@ Sui Grant Payout Manager 处理 Sui 上的 Grant 分配与支付管理，通过 
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/0d21cbd0-f323-4e84-896e-a903bfc5743d
-- GitHub: https://github.com/0xfig521/sui-grant-payout-manager
+- GitHub: https://github.com/0xFig159/sui-grant-payout-manager
 - Demo Video: https://drive.google.com/open?id=12HMLViPzJPciVESAifecDnpkXuijUYZ_
 - Website: https://sui-grant-payout-manager.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

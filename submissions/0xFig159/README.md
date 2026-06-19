@@ -22,7 +22,7 @@ TradeTrace 是一个基于 Sui 的交易透明与证明平台。利用 DeepBook 
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

@@ -15,13 +15,13 @@ Sui Package Reputation Registry 为 Sui Move 包提供信誉与信任评分。�
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/c5591492-4a64-45cf-a470-c0c36e0b0f51
-- GitHub: https://github.com/0xfig521/sui-package-reputation-registry
+- GitHub: https://github.com/0xFig159/sui-package-reputation-registry
 - Demo Video: https://drive.google.com/open?id=1xsBARHJGehOgBBFTEvn-0tiKKoWUIOxO
 - Website: https://sui-package-reputation-registry.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 

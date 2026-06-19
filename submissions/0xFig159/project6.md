@@ -15,13 +15,13 @@ Prediction Market Integrity Monitor 为 DeepBook/Sui 上的预测市场提供实
 ## Links / 链接
 
 - DeepSurge: https://www.deepsurge.xyz/projects/b89b53cc-0f05-4ae8-bffa-2f24445b4213
-- GitHub: https://github.com/0xfig521/prediction-market-integrity-monitor
+- GitHub: https://github.com/0xFig159/prediction-market-integrity-monitor
 - Demo Video: https://drive.google.com/open?id=1rcj0HZsocOjKALpmsR1LUVv2HHLtCVL5
 - Website: https://prediction-market-integrity-monitor.ygz0425.workers.dev
 
 ## Team / 团队成员
 
-- @0xfig
+- @0xFig159
 
 ## Deployment / 部署信息
 
